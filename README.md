@@ -1,4 +1,4 @@
-# Pos-Printer
+# PosPrinter
 Pos printer library supporting fiscal memory
 
 ### License
