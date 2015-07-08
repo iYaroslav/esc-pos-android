@@ -1,2 +1,0 @@
-int string app_name 0x7f020000
-int string license_agreement 0x7f020001

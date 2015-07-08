@@ -33,6 +33,6 @@ android {
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])
 	compile 'com.android.support:appcompat-v7:22.2.0'
-	compile 'com.google.android.gms:play-services-analytics:7.3.0'
+	compile 'com.google.android.gms:play-services-analytics:7.5.0'
 	compile project(':PosPrinter')
 }

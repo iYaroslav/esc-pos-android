@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pos_paired_devices">Сопряжённые устройства</string>
+	<string name="pos_available_devices">Доступные устройства</string>
+	<string name="pos_title_choose_printer">Выберите принтер</string>
+	<string name="pos_title_connecting_to">Подключение к</string>
+</resources>

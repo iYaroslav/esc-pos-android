@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="@color/pos_accent">
+
+	<item android:id="@android:id/mask">
+		<color android:color="@color/pos_accent" />
+	</item>
+
+	<item android:drawable="@android:color/transparent" />
+</ripple><!-- From: file:/Users/Yaroslav/Documents/Workspace/Android/PosPrinter/lib/src/main/res/drawable-v21/menu_item_bg.xml --><!-- From: file:/Users/Yaroslav/Documents/Workspace/Android/PosPrinter/lib/build/intermediates/bundles/debug/res/drawable-v21/menu_item_bg.xml -->

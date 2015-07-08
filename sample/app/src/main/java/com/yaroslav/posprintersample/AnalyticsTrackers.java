@@ -45,9 +45,6 @@ public final class AnalyticsTrackers {
 	private final Map<Target, Tracker> mTrackers = new HashMap<>();
 	private final Context mContext;
 
-	/**
-	 * Don't instantiate directly - use {@link #getInstance()} instead.
-	 */
 	private AnalyticsTrackers(Context context) {
 		mContext = context.getApplicationContext();
 	}

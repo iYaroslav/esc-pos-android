@@ -2,6 +2,14 @@
 <resources>
     <!-- From: file:/Users/Yaroslav/Documents/Workspace/Android/PosPrinter/lib/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
-    <string name="app_name">PosPrinter</string>
-    <string name="license_agreement">Copyright 2015 Samardak Yaroslav\n\nLicensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <color name="pos_accent">#FF00796B</color>
+    <color name="pos_highlight">#FFAAAAAA</color>
+    <color name="pos_text_primary">#FF000000</color>
+    <color name="pos_text_secondary">#FF323232</color>
+    <declare-styleable name="DeviceItemView"><attr format="dimension" name="insets_vertical"/><attr format="dimension" name="insets_horizontal"/><attr format="string" name="item_title"/><attr format="boolean" name="selected"/><attr format="reference" name="item_icon"/></declare-styleable>
+    <string name="pos_app_name" translatable="false">PosPrinter</string>
+    <string name="pos_available_devices">Available devices</string>
+    <string name="pos_license_agreement" translatable="false">Copyright 2015 Samardak Yaroslav\n\nLicensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="pos_paired_devices">Paired devices</string>
+    <string name="pos_title_choose_printer">Choose printer</string>
 </resources>

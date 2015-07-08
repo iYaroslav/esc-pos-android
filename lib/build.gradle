@@ -34,5 +34,9 @@ repositories {
 }
 
 dependencies {
-	testCompile group: 'junit', name: 'junit', version: '4.11'
+	testCompile 'junit:junit:4.11'
+	compile files('libs/btsdk.jar')
+	compile 'com.android.support:support-v4:22.2.0'
+	compile 'com.android.support:appcompat-v7:22.2.0'
+	compile 'org.apache.commons:commons-lang3:3.4'
 }
