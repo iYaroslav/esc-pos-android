@@ -46,18 +46,17 @@ Library in the automatic mode will request switch bluetooth, if it is not turned
 <p align="center"><img alt="Screenshot of choose device dialog" width="300px" src="https://raw.githubusercontent.com/iYaroslav/PosPrinter/master/screenshots/choose_device.png" /></p>
 
 ### Create ticket
-To create a ticket you must use a generator TicketBuilder
+To create a ticket you must use a generator **TicketBuilder** class:
 ```java
 Ticket ticket = new TicketBuilder()
 	.header("PosPrinter")
+	.divider()
 	.text("Date: " + DateFormat.format("dd.MM.yyyy", date).toString())
 	.text("Time: " + DateFormat.format("HH:mm", date).toString())
 	.text("Ticket No: " + (ticketNumber++))
 	.divider()
 	.subHeader("Hot dishes")
-	
-	...
-	
+	//...
 	.menuLine("— 2 Coffee", "3,00")
 	.right("Total: 12,50")
 	.dividerDouble()
