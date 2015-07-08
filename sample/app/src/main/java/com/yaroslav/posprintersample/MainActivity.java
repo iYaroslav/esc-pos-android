@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+//		TODO register in http://android-arsenal.com
+
 		Tracker tracker = App.getTracker();
 		tracker.setScreenName("MainActivity");
 		tracker.send(new HitBuilders.ScreenViewBuilder().build());
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 			}
 
 			@Override
-			public void onFailed() {
+			public void onFailure() {
 				Toast.makeText(MainActivity.this, "Connection failed", Toast.LENGTH_SHORT).show();
 //				btnSend.setEnabled(false);
 			}

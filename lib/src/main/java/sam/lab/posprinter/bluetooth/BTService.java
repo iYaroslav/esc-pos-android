@@ -321,7 +321,7 @@ public class BTService {
 				mainHandler.post(new Runnable() {
 					@Override
 					public void run() {
-						deviceCallbacks.onFailed();
+						deviceCallbacks.onFailure();
 					}
 				});
 			}

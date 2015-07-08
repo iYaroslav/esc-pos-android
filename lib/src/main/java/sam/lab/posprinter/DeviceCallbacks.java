@@ -17,6 +17,6 @@ package sam.lab.posprinter;
  */
 public interface DeviceCallbacks {
 	void onConnected();
-	void onFailed();
+	void onFailure();
 	void onDisconnected();
 }
