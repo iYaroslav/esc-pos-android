@@ -8,7 +8,7 @@ This library works on Android 3.0 and older.
 - small size of the library
 - support for many Chinese printers
 - Storage fiscal data in encrypted form
-- Ability to automatically send reports on time
+- Ability to automatically send reports on time (will send decrypted fiscal data)
 
 #### Shortcomings
 - on some devices print gibberish
