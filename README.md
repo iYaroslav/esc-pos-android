@@ -1,5 +1,6 @@
 # PosPrinter
 Pos printer library supporting fiscal memory.
+
 This library works on Android 3.0 and older.
 
 #### Features
@@ -66,9 +67,9 @@ Ticket ticket = new TicketBuilder()
 	.stared("THAK YOU")
 	.build();
 ```
-If you place the printer in debug mode **printer.setDebug(true)** when you call **ticket.toString()** string is generated that can be ispolzvat to debug without using the printer, or to show it to the client application.
+Call the function **ticket.getTicketPreview()** you get a string that can be use to debug without using the printer.
 
-The example of **ticket.toString()**
+Example response **ticket.getTicketPreview()**:
 ```
     ┌───────────────────────────────────┐
     │▓▓▓▓▓▓▓▓▓▓▓ PosPrinter ▓▓▓▓▓▓▓▓▓▓▓▓│
