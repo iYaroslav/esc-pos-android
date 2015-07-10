@@ -8,13 +8,30 @@ This library works on Android 3.0 and older.
 - bluetooth devices are marked with an icon to improve UI
 - small size of the library
 - support for many Chinese printers
-- Storage fiscal data in encrypted form
-- Ability to automatically send reports on time (will send decrypted fiscal data)
+- ticket builder
+- storage fiscal data in encrypted form
+- ability to automatically send reports on time (will send decrypted fiscal data)
 
 #### Shortcomings
 - on some devices print gibberish
 
-# Usage
+# How to include this library
+Download this library, import to your IDE (eclipse...) as a library project.
+##### Using Gradle
+```groovy
+compile 'sam.lab.posprinter:1.0-SNAPSHOT'
+```
+##### Using Maven
+```xml
+<dependency>
+    <groupId>sam.lab</groupId>
+    <artifactId>posprinter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <type>apklib</type>
+</dependency>
+```
+
+# How to use this library
 
 ### Printer connection
 
