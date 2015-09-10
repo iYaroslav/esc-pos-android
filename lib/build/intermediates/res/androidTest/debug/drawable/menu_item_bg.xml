@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-	<item android:state_selected="true" android:drawable="@color/pos_highlight" />
-	<item android:state_pressed="true" android:drawable="@color/pos_highlight" />
-	<item android:state_focused="true" android:drawable="@color/pos_highlight" />
-	<item android:drawable="@android:color/transparent" />
-
-</selector><!-- From: file:/Users/Yaroslav/Documents/Workspace/Android/PosPrinter/lib/src/main/res/drawable/menu_item_bg.xml --><!-- From: file:/Users/Yaroslav/Documents/Workspace/Android/PosPrinter/lib/build/intermediates/bundles/debug/res/drawable/menu_item_bg.xml -->

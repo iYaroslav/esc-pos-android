@@ -1,3 +1,0 @@
-include ':app'
-include ':PosPrinter'
-project(':PosPrinter').projectDir=new File('/Users/Yaroslav/Documents/Workspace/Android/PosPrinter/lib')

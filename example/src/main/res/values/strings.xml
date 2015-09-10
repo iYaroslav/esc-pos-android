@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name" translatable="false">PosPrinter</string>
+	<string name="action_settings">Settings</string>
+	<string name="action_connect">Connect</string>
+	<string name="action_disconnect">Disconnect</string>
+	<string name="action_print">Print</string>
+	<string name="title_state">State</string>
+	<string name="title_message">Message</string>
+</resources>

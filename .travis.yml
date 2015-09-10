@@ -5,7 +5,11 @@ jdk:
 
 before_install:
 	- chmod +x gradlew
+<<<<<<< Updated upstream
  
+=======
+
+>>>>>>> Stashed changes
 android:
 	components:
 		- build-tools-22.0.1

@@ -39,7 +39,11 @@ compile 'sam.lab.posprinter:1.0-SNAPSHOT'
 //Initialization
 printer = PosPrinter.getPrinter(activity);
 
+<<<<<<< Updated upstream
 //Subscibe to device events
+=======
+//Subscribe to device events
+>>>>>>> Stashed changes
 printer.setDeviceCallbacks(new DeviceCallbacks() {
 	@Override
 	public void onConnected() {
@@ -81,7 +85,11 @@ Ticket ticket = new TicketBuilder()
 	.menuLine("Total gift", "3,00")
 	.menuLine("Total", "128,30")
 	.dividerDouble()
+<<<<<<< Updated upstream
 	.stared("THAK YOU")
+=======
+	.stared("THANK YOU")
+>>>>>>> Stashed changes
 	.build();
 ```
 Call the function **ticket.getTicketPreview()** you get a string that can be use to debug without using the printer.
@@ -121,7 +129,11 @@ Example response **ticket.getTicketPreview()**:
     │Total gift                     3,00│
     │Total                        128,30│
     ╞═══════════════════════════════════╡
+<<<<<<< Updated upstream
     │         *** THAK YOU ***          │
+=======
+    │        *** THANK YOU ***          │
+>>>>>>> Stashed changes
     └───────────────────────────────────┘
 ```
 

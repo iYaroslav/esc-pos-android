@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="action_settings">Настройки</string>
+	<string name="title_message">Сообщение</string>
+	<string name="title_state">Состояние</string>
+	<string name="action_print">Печать</string>
+	<string name="action_connect">Подключиться</string>
+	<string name="action_disconnect">Отключиться</string>
+</resources>
