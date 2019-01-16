@@ -61,7 +61,7 @@ printer.setDeviceCallbacks(new DeviceCallbacks() {
 printer.connect();
 ```
 Library in the automatic mode will request switch bluetooth, if it is not turned on, and start the search for devices. When you restart the application, the application automatically connects to the printer, if it is available.
-<p align="center"><img alt="Screenshot of choose device dialog" width="300px" src="https://raw.githubusercontent.com/iYaroslav/PosPrinter/master/screenshots/choose_device.png" /></p>
+<p align="center"><img alt="Screenshot of choose device dialog" width="300px" src="https://github.com/iYaroslav/PosPrinter/blob/master/art/choose_device.png?sanitize=true&raw=true" /></p>
 
 ### Create ticket
 To create a ticket you must use a generator **TicketBuilder** class:
