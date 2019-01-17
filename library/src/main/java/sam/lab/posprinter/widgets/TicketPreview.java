@@ -23,7 +23,7 @@ import sam.lab.posprinter.Ticket;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class TicketPreview extends TextView {
+public class TicketPreview extends android.support.v7.widget.AppCompatTextView {
 
 	private static Typeface typeface;
 

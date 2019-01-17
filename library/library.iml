@@ -22,6 +22,34 @@
         <option name="PROJECT_TYPE" value="1" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/libs/btsdk.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/de5bff2c1eecc041e64302ce57e40a86/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/1df772355c233febb0d0e7becbcffed1/jars/classes.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.11/4839661cf6ce3c14b65ed7dcf5b9249b44ecca16/kotlin-stdlib-jdk7-1.3.11.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/3ef68d377f4575d4236155ab27c00418/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3dab07a6110a4471276203bdd13ebb73/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/2799412c3030361db39ffdcfac2c9e4d/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/ad040013f37f61b402f65193c5d0a2ea/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/1f67ebd6b3ecf5be52be58092e6c7db5/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/a35ee2274d34806a2c1ccc14c35f7a34/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/e0226621265b8b2165fe878ed8fe343d/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f8ac9ef76b00836cc2197a1ab69a054b/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/d5e9e2df69dc8af5af2ae2572ed1dbcd/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/320dceacaf8a00bf785d982b898beeb0/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d50434a495887c7b5759c6acf667035d/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/60a7343fd705efc2e565796ef1148a49/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/383d15f3f827ddfa3d03ed15d440f3cd/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7999f8bf0630631cf2a23d8b34e602bd/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e989cd0d00faa688127689bcab722afb/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b9f4c8cd1b7ca62635d0e6c80b65d482/jars/classes.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4cd704f5d6d60fb792750e9db962871/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/94b83028303c82a687615dad7fc0370f/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e31531dfc313f2cc982be2503d0bc20a/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2551c7f16650f2c398e1cd4fd5f57d5e/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/d1df031a116cc83b55f2f958f4b8faba/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/56548e0f73087e28344105501be05686/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/a0a16d31590022ed960a3f576ff7daf5/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2d34ced62f4d807b04dd910bd2137a11/jars/classes.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a33300073cc5164b385cb74b872164d2/jars/classes.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/iyaroslav/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/df595bc39bd707c176b336ffdc4a7699/jars/classes.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.11/4cbc5922a54376018307a731162ccaf3ef851a39/kotlin-stdlib-1.3.11.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/d8b8e746e279f1c4f5e08bc14a96b82e6bb1de02/kotlin-stdlib-common-1.3.11.jar:/Users/iyaroslav/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/iyaroslav/Documents/Workspace/Android/PosPrinter/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar:/Users/iyaroslav/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="library_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.11/61615dc1b4490a6a1940454da57496356067e488/kotlin-android-extensions-1.3.11.jar" />
+            </array>
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes" />
@@ -121,13 +149,17 @@
     <orderEntry type="library" name="Gradle: com.android.support:loader:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:runtime:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.11@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.11@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:collections:28.0.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.11@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cursoradapter:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater:28.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:print:28.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.4@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/iyaroslav/Documents/Workspace/Android/PosPrinter/library/libs/btsdk.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1@jar" level="project" />

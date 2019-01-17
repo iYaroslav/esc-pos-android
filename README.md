@@ -84,9 +84,9 @@ Ticket ticket = new TicketBuilder()
 	.stared("THANK YOU")
 	.build();
 ```
-Call the function **ticket.getTicketPreview()** you get a string that can be use to debug without using the printer.
+Call the function **ticket.getPreview()** you get a string that can be use to debug without using the printer.
 
-Example response **ticket.getTicketPreview()**:
+Example response **ticket.getPreview()**:
 ```
     ┌───────────────────────────────────┐
     │▓▓▓▓▓▓▓▓▓▓▓ PosPrinter ▓▓▓▓▓▓▓▓▓▓▓▓│
