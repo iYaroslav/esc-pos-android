@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright 2015 Samardak Yaroslav
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2015 LeeryBit
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -17,12 +16,12 @@
 
 <resources>
 
-	<declare-styleable name="DeviceItemView">
-		<attr name="insets_vertical" format="dimension" />
-		<attr name="insets_horizontal" format="dimension" />
-		<attr name="item_title" format="string" />
-		<attr name="selected" format="boolean" />
-		<attr name="item_icon" format="reference" />
-	</declare-styleable>
+  <declare-styleable name="DeviceItemView">
+    <attr name="insets_vertical" format="dimension" />
+    <attr name="insets_horizontal" format="dimension" />
+    <attr name="item_title" format="string" />
+    <attr name="selected" format="boolean" />
+    <attr name="item_icon" format="reference" />
+  </declare-styleable>
 
 </resources>

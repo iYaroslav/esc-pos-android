@@ -16,23 +16,23 @@ import com.google.android.gms.analytics.HitBuilders
 import java.io.IOException
 import java.util.Date
 
-import sam.lab.posprinter.DeviceCallbacks
-import sam.lab.posprinter.PosPrinter
-import sam.lab.posprinter.Ticket
-import sam.lab.posprinter.TicketBuilder
-import sam.lab.posprinter.widgets.TicketPreview
-import sam.lab.posprinter.bluetooth.BTService
+import com.leerybit.escpos.DeviceCallbacks
+import com.leerybit.escpos.PosPrinter
+import com.leerybit.escpos.Ticket
+import com.leerybit.escpos.TicketBuilder
+import com.leerybit.escpos.widgets.TicketPreview
+import com.leerybit.escpos.bluetooth.BTService
 
 /**
  * Created by Yaroslav on 04.07.15.
- * Copyright 2015 iYaroslav LLC.
+ * Copyright 2015 LeeryBit LLC.
  */
 class MainActivity : AppCompatActivity() {
 
   private val printer by lazy { PosPrinter.getPrinter(this) }
   private val preview by lazy { findViewById<TicketPreview>(R.id.ticket) }
-  private val messageView by lazy { findViewById<TextView>(R.id.ticket) }
-  private val stateView by lazy { findViewById<TextView>(R.id.ticket) }
+  private val messageView by lazy { findViewById<TextView>(R.id.tv_message) }
+  private val stateView by lazy { findViewById<TextView>(R.id.tv_state) }
 
   private var ticketNumber = 0
 
@@ -46,24 +46,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     val btnSearch = findViewById<Button>(R.id.btn_search)
-    val btnSend = findViewById<Button>(R.id.btn_print_raw)
-    btnSend.isEnabled = false
 
     printer.setCharsetName("UTF-8")
     printer.setDeviceCallbacks(object : DeviceCallbacks {
       override fun onConnected() {
         btnSearch.setText(R.string.action_disconnect)
-        btnSend.isEnabled = true
       }
 
       override fun onFailure() {
         Toast.makeText(this@MainActivity, "Connection failed", Toast.LENGTH_SHORT).show()
-        btnSend.isEnabled = false
       }
 
       override fun onDisconnected() {
         btnSearch.setText(R.string.action_connect)
-        btnSend.isEnabled = false
       }
     })
 

@@ -52,7 +52,7 @@
       android:text="@string/title_message"
       android:textColor="@color/text" />
 
-    <sam.lab.posprinter.widgets.TicketPreview
+    <com.leerybit.escpos.widgets.TicketPreview
       android:id="@+id/ticket"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

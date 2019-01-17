@@ -7,7 +7,7 @@ import com.google.android.gms.analytics.HitBuilders
 
 /**
  * Created by Yaroslav on 04.07.15.
- * Copyright 2015 iYaroslav LLC.
+ * Copyright 2015 LeeryBit LLC.
  */
 class App : Application() {
 
