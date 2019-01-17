@@ -1,45 +1,36 @@
 apply plugin: 'com.android.application'
 
-android {
-	compileSdkVersion 22
-	buildToolsVersion '22.0.1'
-
-	defaultConfig {
-		applicationId "io.github.iyaroslav.posprinter"
-		minSdkVersion 9
-		targetSdkVersion 22
-		versionCode 1
-		versionName "1.0"
-	}
-
-	signingConfigs {
-		release
-	}
-
-	buildTypes {
-		debug {
-			debuggable true
-			signingConfig signingConfigs.release
-		}
-		release {
-			debuggable false
-			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-			signingConfig signingConfigs.release
-		}
-	}
-	compileOptions {
-		sourceCompatibility JavaVersion.VERSION_1_6
-		targetCompatibility JavaVersion.VERSION_1_6
-	}
-}
-
 def signingFile = file("./signing.gradle")
 if (signingFile.exists())
-	apply from: signingFile
+  apply from: signingFile
+
+android {
+  compileSdkVersion 28
+
+  defaultConfig {
+    applicationId "io.github.iyaroslav.posprinter"
+    minSdkVersion 15
+    targetSdkVersion 28
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    debug {
+      debuggable true
+      signingConfig signingConfigs.release
+    }
+    release {
+      debuggable false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.release
+    }
+  }
+}
 
 dependencies {
-	compile fileTree(dir: 'libs', include: ['*.jar'])
-	compile 'com.android.support:appcompat-v7:22.2.0'
-	compile 'com.google.android.gms:play-services-analytics:7.5.0'
-	compile project(':library')
+  implementation fileTree(include: ['*.jar'], dir: 'libs')
+  implementation 'com.android.support:appcompat-v7:28.0.0'
+  implementation 'com.google.android.gms:play-services-analytics:16.0.6'
+  implementation project(':library')
 }
