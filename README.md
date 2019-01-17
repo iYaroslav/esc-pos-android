@@ -1,7 +1,7 @@
-# PosPrinter
-Pos printer library supporting fiscal memory.
+# ESC/POS Android
+ESC/POS printer library supporting fiscal memory.
 
-This library works on Android 3.0 and older.
+This library works on Android 4.0.3 and older.
 
 #### Features
 - you can forget about using bluetooth
@@ -19,14 +19,14 @@ This library works on Android 3.0 and older.
 Download this library, import to your IDE (eclipse...) as a library project.
 ##### Using Gradle
 ```groovy
-compile 'sam.lab.posprinter:1.0-SNAPSHOT'
+compile 'com.leerybit.escpos:1.0'
 ```
 ##### Using Maven
 ```xml
 <dependency>
-    <groupId>sam.lab</groupId>
-    <artifactId>posprinter</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.leerybit</groupId>
+    <artifactId>escpos</artifactId>
+    <version>1.0</version>
     <type>apklib</type>
 </dependency>
 ```
@@ -129,7 +129,7 @@ Example response **ticket.getPreview()**:
 
 ### License
 ```
-Copyright 2015 Samardak Yaroslav
+Copyright 2015 LeeryBit
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
