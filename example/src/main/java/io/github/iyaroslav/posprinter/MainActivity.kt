@@ -12,14 +12,11 @@ import android.widget.TextView
 import android.widget.Toast
 
 import com.google.android.gms.analytics.HitBuilders
+import com.leerybit.escpos.*
 
 import java.io.IOException
 import java.util.Date
 
-import com.leerybit.escpos.DeviceCallbacks
-import com.leerybit.escpos.PosPrinter
-import com.leerybit.escpos.Ticket
-import com.leerybit.escpos.TicketBuilder
 import com.leerybit.escpos.widgets.TicketPreview
 import com.leerybit.escpos.bluetooth.BTService
 
@@ -29,7 +26,7 @@ import com.leerybit.escpos.bluetooth.BTService
  */
 class MainActivity : AppCompatActivity() {
 
-  private val printer by lazy { PosPrinter.getPrinter(this) }
+  private val printer by lazy { PosPrinter80mm(this) }
   private val preview by lazy { findViewById<TicketPreview>(R.id.ticket) }
   private val messageView by lazy { findViewById<TextView>(R.id.tv_message) }
   private val stateView by lazy { findViewById<TextView>(R.id.tv_state) }
@@ -98,7 +95,7 @@ class MainActivity : AppCompatActivity() {
       val date = Date()
       val ticket: Ticket
 
-      ticket = TicketBuilder()
+      ticket = TicketBuilder(printer)
           .isCyrillic(true)
           .raw(this, R.raw.ticket,
               DateFormat.format("dd.MM.yyyy", date).toString(),
@@ -116,7 +113,6 @@ class MainActivity : AppCompatActivity() {
     } catch (e: IOException) {
       e.printStackTrace()
     }
-
   }
 
   private fun printTicket() {
@@ -124,38 +120,36 @@ class MainActivity : AppCompatActivity() {
       val date = Date()
       val ticket: Ticket
 
-      ticket = TicketBuilder()
+      ticket = TicketBuilder(printer)
           .isCyrillic(true)
           .header("PosPrinter")
           .divider()
-          .center("Кирилица должна поддерживаться самим принтером, инече будут кракозябры или пустота")
-          .divider()
           .text("Date: ${DateFormat.format("dd.MM.yyyy", date)}")
           .text("Time: ${DateFormat.format("HH:mm", date)}")
-          .text("Ticket No: " + ++ticketNumber)
+          .text("Ticket No: ${++ticketNumber}")
           .fiscalInt("ticket_no", ticketNumber)
           .divider()
           .subHeader("Hot dishes")
-          .menuLine("— 3 Kazan kabob", "60,00")
-          .menuLine("— 2 Full-Rack Ribs", "32,00")
+          .menuLine("- 3 Kazan kabob", "60,00")
+          .menuLine("- 2 Full-Rack Ribs", "32,00")
           .right("Total: 92,00")
           .feedLine()
           .subHeader("Salads")
-          .menuLine("— 1 Turkey & Swiss", "4,50")
-          .menuLine("— 1 Classic Cheese", "3,30")
-          .menuLine("— 1 Chicken Caesar Salad", "7,00")
+          .menuLine("- 1 Turkey & Swiss", "4,50")
+          .menuLine("- 1 Classic Cheese", "3,30")
+          .menuLine("- 1 Chicken Caesar Salad", "7,00")
           .right("Total: 14,80")
           .feedLine()
           .subHeader("Desserts")
-          .menuLine("— 1 Blondie", "5,00")
-          .menuLine("— 2 Chocolate Cake", "7,00")
+          .menuLine("- 1 Blondie", "5,00")
+          .menuLine("- 2 Chocolate Cake", "7,00")
           .right("Total: 12,00")
           .feedLine()
           .subHeader("Drinkables")
           .center("50% sale for Coke on mondays!")
-          .menuLine("— 3 Coca-Cola", "6,00")
-          .menuLine("— 7 Tea", "3,50")
-          .menuLine("— 2 Coffee", "3,00")
+          .menuLine("- 3 Coca-Cola", "6,00")
+          .menuLine("- 7 Tea", "3,50")
+          .menuLine("- 2 Coffee", "3,00")
           .right("Total: 12,50")
           .dividerDouble()
           .menuLine("Total gift", "3,00")
@@ -165,6 +159,7 @@ class MainActivity : AppCompatActivity() {
           .fiscalDouble("out_price", 128.30, 2)
           .dividerDouble()
           .stared("THANK YOU")
+          .feedLine(4)
           .build()
 
       preview.setTicket(ticket)

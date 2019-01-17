@@ -10,19 +10,19 @@
 ^SHD:Hot dishes
 Нужно сделать повторы!
 
-^M:— 3 Kazan kabob|60,00|.
-^M:— 2 Full-Rack Ribs|32,00|.
+^M:- 3 Kazan kabob|60,00|.
+^M:- 2 Full-Rack Ribs|32,00|.
 ^R:Total: 92,00
 ^BR
 ^SHD:Salads
-^M:— 1 Turkey & Swiss|4,50
-^M:— 1 Classic Cheese|3,30
-^M:— 1 Chicken Caesar Salad|7,00
+^M:- 1 Turkey & Swiss|4,50
+^M:- 1 Classic Cheese|3,30
+^M:- 1 Chicken Caesar Salad|7,00
 ^R:Total: 14,80
 ^BR
 ^SHD:Desserts
-^M:— 1 Blondie|5,00
-^M:— 2 Chocolate Cake|7,00
+^M:- 1 Blondie|5,00
+^M:- 2 Chocolate Cake|7,00
 ^R:Total: 12,00
 ^BR
 ^SHD:Drinkables

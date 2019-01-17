@@ -27,18 +27,18 @@ import com.leerybit.escpos.bluetooth.SearchPrinterDialog;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class PosPrinter implements Printer {
+abstract class PosPrinter implements Printer {
   private final Activity activity;
-  private static PosPrinter instance;
 
   private final BTService btService;
   private OnStateChangedListener onStateChangedListener;
 
-  int charsOnLine = 32;
+  int charsOnLine;
   String charsetName = "ASCII";
 
-  private PosPrinter(Activity activity) {
+  PosPrinter(Activity activity) {
     this.activity = activity;
+    this.charsOnLine = getCharsOnLine();
 
     btService = new BTService(activity, new Handler() {
       @Override
@@ -55,13 +55,7 @@ public class PosPrinter implements Printer {
     PrinterFonts.setFontGroup(PrinterFonts.FontGroup.BASIC);
   }
 
-  public static PosPrinter getPrinter(Activity activity) {
-    if (instance == null) {
-      instance = new PosPrinter(activity);
-    }
-
-    return instance;
-  }
+  abstract int getCharsOnLine();
 
   @Override
   public void send(Ticket ticket) {

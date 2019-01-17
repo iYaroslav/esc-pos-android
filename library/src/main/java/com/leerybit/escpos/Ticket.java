@@ -36,11 +36,12 @@ public class Ticket {
   int charsOnLine;
   final String charsetName;
 
-  Ticket() {
+  Ticket(PosPrinter printer) {
+    this.printer = printer;
+
     data = new ArrayList<>();
     fiscalData = new HashMap<>();
 
-    printer = PosPrinter.getPrinter(null);
     charsOnLine = printer.charsOnLine;
     charsetName = printer.charsetName;
 
@@ -132,14 +133,14 @@ public class Ticket {
 
   private String fixText(String text, char fill, TicketBuilder.TextAlignment alignment, int charsOnLine) {
     if (text.length() > charsOnLine) {
-      String out = "";
+      StringBuilder out = new StringBuilder();
       int len = text.length();
       for (int i = 0; i <= len / charsOnLine; i++) {
         String str = text.substring(i * charsOnLine, Math.min((i + 1) * charsOnLine, len));
-        if (!str.trim().isEmpty()) out += fixText(str, fill, alignment, charsOnLine);
+        if (!str.trim().isEmpty()) out.append(fixText(str, fill, alignment, charsOnLine));
       }
 
-      return out;
+      return out.toString();
     }
 
     switch (alignment) {

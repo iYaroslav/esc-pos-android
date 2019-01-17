@@ -33,9 +33,9 @@ public class TicketBuilder {
   private final Ticket ticket;
   private int charsOnLine;
 
-  public TicketBuilder() {
-    ticket = new Ticket();
-    charsOnLine = ticket.charsOnLine;
+  public TicketBuilder(PosPrinter printer) {
+    ticket = new Ticket(printer);
+    charsOnLine = printer.charsOnLine;
   }
 
   public TicketBuilder isCyrillic(boolean cyrillic) {
