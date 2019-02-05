@@ -27,7 +27,7 @@ import com.leerybit.escpos.bluetooth.SearchPrinterDialog;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-abstract class PosPrinter implements Printer {
+public abstract class PosPrinter implements Printer {
   private final Activity activity;
 
   private final BTService btService;
